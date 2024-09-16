@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradebook - School Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <?php include 'sidebar.html'; ?>
+<a href="sidebar mob div.html"></a>
+  <header class="header">
+    <h1>Gradebook</h1>
+  </header>
+
+  <main>
+    <table class="grades-table">
+      <thead>
+        <tr>
+          <th>Student</th>
+          <th>UX Design</th>
+          <th>Web Development</th>
+          <th>Mathematics</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td>A</td>
+          <td>B+</td>
+          <td>B</td>
+          <td>
+            <button class="edit-btn">Edit</button>
+          </td>
+        </tr>
+        <!-- Add more students and grades -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="footer">
+    <a href="index.html" class="footer-btn">Home</a>
+    <a href="students.html" class="footer-btn">Students</a>
+    <a href="teachers.html" class="footer-btn">Teachers</a>
+    <a href="grades.html" class="footer-btn active">Gradebook</a>
+    <a href="calendar.html" class="footer-btn">Calendar</a>
+  </footer>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

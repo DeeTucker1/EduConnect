@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - School Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <?php include 'sidebar.html'; ?>
+
+  <header class="header">
+    <h1>School Management Dashboard</h1>
+  </header>
+
+  <main>
+    <section class="dashboard-metrics">
+      <div class="card">
+        <h2>Total Students</h2>
+        <p>932</p>
+        <small>+10 new students this week</small>
+      </div>
+      <div class="card">
+        <h2>Total Teachers</h2>
+        <p>45</p>
+        <small>+2 new teachers this week</small>
+      </div>
+      <div class="card">
+        <h2>Pending Assignments</h2>
+        <p>12</p>
+        <small>Due within this week</small>
+      </div>
+      <div class="card">
+        <h2>Upcoming Events</h2>
+        <p>3</p>
+        <small>Next: Parent-Teacher Meeting</small>
+      </div>
+    </section>
+
+    <section class="charts">
+      <div class="chart-card">
+        <h2>Attendance Overview</h2>
+        <div class="chart-placeholder">[Chart Placeholder]</div>
+      </div>
+      <div class="chart-card">
+        <h2>Student Performance</h2>
+        <div class="chart-placeholder">[Chart Placeholder]</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="index.html" class="footer-btn active">Home</a>
+    <a href="students.html" class="footer-btn">Students</a>
+    <a href="teachers.html" class="footer-btn">Teachers</a>
+    <a href="assignments.html" class="footer-btn">Assignments</a>
+    <a href="calendar.html" class="footer-btn">Calendar</a>
+  </footer>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Event Calendar for the School Management System">
+  <title>Event Calendar - School Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Navigation sidebar">
+      <!-- Sidebar content goes here -->
+    </aside>
+
+    <div class="main-content">
+      <header class="header">
+        <h1>Event Calendar</h1>
+      </header>
+
+      <main>
+        <section class="calendar" aria-label="Monthly calendar">
+          <h2 class="sr-only">Monthly Calendar</h2>
+          <div class="calendar-grid">
+            <div class="calendar-day" aria-label="May 1, 2023">
+              <time datetime="2023-05-01">1</time>
+            </div>
+            <div class="calendar-day" aria-label="May 2, 2023">
+              <time datetime="2023-05-02">2</time>
+            </div>
+            <div class="calendar-day" aria-label="May 3, 2023">
+              <time datetime="2023-05-03">3</time>
+            </div>
+            <!-- More days -->
+            <div class="calendar-day" aria-label="May 30, 2023">
+              <time datetime="2023-05-30">30</time>
+            </div>
+            <div class="calendar-day" aria-label="May 31, 2023">
+              <time datetime="2023-05-31">31</time>
+            </div>
+          </div>
+        </section>
+
+        <section class="events-list" aria-labelledby="upcoming-events-heading">
+          <h2 id="upcoming-events-heading">Upcoming Events</h2>
+          <ul>
+            <li>
+              <h3>Parent-Teacher Meeting</h3>
+              <time datetime="2023-05-15">May 15, 2023</time>
+            </li>
+            <li>
+              <h3>End-of-Year Exam</h3>
+              <time datetime="2023-06-01">June 1, 2023</time>
+            </li>
+            <li>
+              <h3>School Sports Day</h3>
+              <time datetime="2023-06-10">June 10, 2023</time>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <nav aria-label="Footer navigation">
+          <ul class="footer-nav-list">
+            <li><a href="index.html" class="footer-btn">Home</a></li>
+            <li><a href="students.html" class="footer-btn">Students</a></li>
+            <li><a href="teachers.html" class="footer-btn">Teachers</a></li>
+            <li><a href="calendar.html" class="footer-btn active" aria-current="page">Calendar</a></li>
+            <li><a href="assignments.html" class="footer-btn">Assignments</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+  </div>
+
+  <script src="calendar.js"></script>
+</body>
+</html>

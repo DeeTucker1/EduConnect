@@ -1,0 +1,264 @@
+:root {
+  --primary-color: #030648;
+  --secondary-color: #24266f;
+  --tertiary-color: #1a1b5c;
+  --text-color: #333;
+  --light-text-color: #b3b3ff;
+  --background-color: #f4f4f4;
+  --white: #fff;
+  --gray: #ccc;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+  --transition: 0.3s ease-in-out;
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+/* Header */
+.header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  transition: width var(--transition);
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-info {
+  text-align: center;
+}
+
+.username {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.user-role {
+  font-size: 0.875rem;
+  color: var(--light-text-color);
+}
+
+.sidebar-nav ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar-nav li {
+  margin-bottom: 1rem;
+}
+
+.nav-link {
+  display: block;
+  padding: 10px 15px;
+  color: var(--white);
+  font-size: 1rem;
+  width: 100%;
+  border-radius: var(--border-radius);
+  transition: background-color var(--transition);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  background-color: var(--secondary-color);
+}
+
+.nav-link.active {
+  background-color: var(--tertiary-color);
+  font-weight: bold;
+}
+
+/* Dashboard */
+.dashboard-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.card small {
+  color: var(--gray);
+}
+
+.charts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.chart-card {
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.chart-placeholder {
+  background-color: var(--background-color);
+  height: 200px;
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--white);
+  padding: 1rem;
+  border-top: 1px solid var(--gray);
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.footer-btn {
+  color: var(--gray);
+  transition: color var(--transition);
+}
+
+.footer-btn:hover,
+.footer-btn:focus,
+.footer-btn.active {
+  color: var(--primary-color);
+}
+
+/* Buttons */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color var(--transition);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--secondary-color);
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--gray);
+  border-radius: var(--border-radius);
+}
+
+/* Utilities */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 0;
+  }
+
+  .sidebar.open {
+    width: 250px;
+  }
+
+  main {
+    margin-left: 0;
+  }
+}

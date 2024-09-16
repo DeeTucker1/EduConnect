@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile - School Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <!-- Sidebar content goes here -->
+  </div>
+
+  <header class="header">
+    <h1>User Profile</h1>
+  </header>
+
+  <main>
+    <div class="profile-container">
+      <div class="profile-header">
+        <div class="avatar-large">
+          <img src="assets/avatar.jpg" alt="Tanya Smith's profile picture">
+        </div>
+        <h2>Tanya Smith</h2>
+        <p class="user-role">Student</p>
+      </div>
+
+      <form class="profile-form" action="/update-profile" method="POST">
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input type="text" id="full-name" name="full-name" value="Tanya Smith" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" value="tanya.smith@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" value="(123) 456-7890" pattern="$$\d{3}$$\s\d{3}-\d{4}">
+        </div>
+
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea id="address" name="address" rows="4">123 Main St, Springfield</textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="profile-pic">Change Profile Picture</label>
+          <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+        </div>
+
+        <button type="submit" class="save-btn">Save Changes</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <nav>
+      <a href="index.html" class="footer-btn">Home</a>
+      <a href="profile.html" class="footer-btn active" aria-current="page">Profile</a>
+      <a href="settings.html" class="footer-btn">Settings</a>
+    </nav>
+  </footer>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

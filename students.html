@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Students - School Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <?php include 'sidebar.html'; ?>
+
+  <header class="header">
+    <h1>Manage Students</h1>
+    <a href="sidebar mob div.html"></a>
+  </header>
+
+  <main>
+    <div class="search-bar">
+      <input type="search" placeholder="Search students..." class="search-input">
+      <button class="add-btn">+ Add Student</button>
+    </div>
+
+    <table class="students-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Age</th>
+          <th>Contact</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>John Doe</td>
+          <td>Grade 5</td>
+          <td>10</td>
+          <td>(123) 456-7890</td>
+          <td>
+            <button class="edit-btn">Edit</button>
+            <button class="delete-btn">Delete</button>
+          </td>
+        </tr>
+        <!-- Add more students -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="footer">
+    <a href="index.html" class="footer-btn">Home</a>
+    <a href="students.html" class="footer-btn active">Students</a>
+    <a href="teachers.html" class="footer-btn">Teachers</a>
+    <a href="assignments.html" class="footer-btn">Assignments</a>
+    <a href="calendar.html" class="footer-btn">Calendar</a>
+  </footer>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

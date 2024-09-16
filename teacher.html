@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dashboard for the School Management System">
+  <title>Dashboard - School Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar" aria-label="Navigation sidebar">
+    <!-- Sidebar content goes here -->
+  </aside>
+
+  <header class="header">
+    <h1>School Management Dashboard</h1>
+  </header>
+
+  <main>
+    <section class="dashboard-metrics" aria-label="Key metrics">
+      <h2 class="sr-only">Key Metrics</h2>
+      <div class="card">
+        <h3>Total Students</h3>
+        <p class="metric">932</p>
+        <p class="metric-change">+10 new students this week</p>
+      </div>
+      <div class="card">
+        <h3>Total Teachers</h3>
+        <p class="metric">45</p>
+        <p class="metric-change">+2 new teachers this week</p>
+      </div>
+      <div class="card">
+        <h3>Pending Assignments</h3>
+        <p class="metric">12</p>
+        <p class="metric-change">Due within this week</p>
+      </div>
+      <div class="card">
+        <h3>Upcoming Events</h3>
+        <p class="metric">3</p>
+        <p class="metric-change">Next: Parent-Teacher Meeting</p>
+      </div>
+    </section>
+
+    <section class="charts" aria-label="Performance charts">
+      <h2 class="sr-only">Performance Charts</h2>
+      <div class="chart-card">
+        <h3>Attendance Overview</h3>
+        <div class="chart-placeholder" aria-label="Attendance Overview Chart" role="img">[Chart Placeholder]</div>
+      </div>
+      <div class="chart-card">
+        <h3>Student Performance</h3>
+        <div class="chart-placeholder" aria-label="Student Performance Chart" role="img">[Chart Placeholder]</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <nav aria-label="Footer navigation">
+      <ul class="footer-nav-list">
+        <li><a href="index.html" class="footer-btn active" aria-current="page">Home</a></li>
+        <li><a href="students.html" class="footer-btn">Students</a></li>
+        <li><a href="teachers.html" class="footer-btn">Teachers</a></li>
+        <li><a href="assignments.html" class="footer-btn">Assignments</a></li>
+        <li><a href="calendar.html" class="footer-btn">Calendar</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

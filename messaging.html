@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Messaging interface for the School Management System">
+  <title>Messaging - School Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside class="sidebar" aria-label="Navigation sidebar">
+    <!-- Sidebar content goes here -->
+  </aside>
+
+  <header class="header">
+    <h1>Messaging</h1>
+  </header>
+
+  <main>
+    <section class="inbox" aria-label="Message inbox">
+      <h2 class="sr-only">Recent Messages</h2>
+      <ul class="message-list">
+        <li>
+          <article class="message">
+            <header>
+              <h3 class="message-sender">John Doe</h3>
+              <time datetime="2023-06-01T10:15">10:15 AM, Today</time>
+            </header>
+            <p class="message-content">Please review the assignment I submitted.</p>
+          </article>
+        </li>
+        <li>
+          <article class="message">
+            <header>
+              <h3 class="message-sender">Teacher</h3>
+              <time datetime="2023-06-01T10:30">10:30 AM, Today</time>
+            </header>
+            <p class="message-content">I have reviewed your work, excellent job!</p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <form class="message-input" aria-label="New message">
+      <label for="new-message">Type your message</label>
+      <input type="text" id="new-message" name="new-message" placeholder="Type your message..." required>
+      <button type="submit">Send</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+    <nav aria-label="Footer navigation">
+      <ul class="footer-nav-list">
+        <li><a href="index.html" class="footer-btn">Home</a></li>
+        <li><a href="students.html" class="footer-btn">Students</a></li>
+        <li><a href="calendar.html" class="footer-btn">Calendar</a></li>
+        <li><a href="messaging.html" class="footer-btn active" aria-current="page">Messaging</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

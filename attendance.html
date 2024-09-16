@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Tracker - School Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <?php include 'sidebar.html'; ?>
+<a href="sidebar mob div.html"></a>
+  <header class="header">
+    <h1>Attendance Tracker</h1>
+  </header>
+
+  <main>
+    <table class="attendance-table">
+      <thead>
+        <tr>
+          <th>Student</th>
+          <th>Present</th>
+          <th>Absent</th>
+          <th>Late</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Doe</td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td><input type="checkbox"></td>
+          <td>
+            <button class="save-btn">Save</button>
+          </td>
+        </tr>
+        <!-- Add more students -->
+      </tbody>
+    </table>
+  </main>
+
+  <footer class="footer">
+    <a href="index.html" class="footer-btn">Home</a>
+    <a href="students.html" class="footer-btn">Students</a>
+    <a href="teachers.html" class="footer-btn">Teachers</a>
+    <a href="attendance.html" class="footer-btn active">Attendance</a>
+    <a href="calendar.html" class="footer-btn">Calendar</a>
+  </footer>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
